@@ -1,10 +1,58 @@
+
+@import url('https://fonts.googleapis.com/css?family=Ibarra+Real+Nova&display=swap');
+
 header{
     background-color:#0047ab ;
     color: white;
     height: 100px;
     text-align: justify;
 }
+p{
+    font-family: 'Ibarra Real Nova', serif;
+}
 h1{
     padding-top: 2.3%;
     margin-left: 25px;
+}
+#gridbox{
+    display: grid;
+    /* grid-column-gap: 25%; */
+    grid-template-columns: 33% 33% 33%;
+    justify-content: space-between;
+
+}
+.princple{
+    padding: 15%;
+    margin-right: 30%;
+}
+/* import are always first
+@import url("demo.html");
+/* genral rule that applies to all devices */
+html *{
+    box-sizing: border-box;
+
+}
+*::before,*::after{
+    box-sizing: border-box;
+}
+body{
+    font-size: 18px; /*1em or 1rem*/
+}
+/* mobile rules  */
+
+/* Larger screen rules  */
+@media screen and (max-width:680px){
+    #gridbox{
+        display: grid;
+        /* grid-column-gap: 25%; */
+        grid-template-columns: 50% 50%;}
+    
+}
+@media screen and (max-width:400px){
+    #gridbox{
+        display: grid;
+        /* grid-column-gap: 25%; */
+        justify-content: space-evenly;
+    
+}
 }

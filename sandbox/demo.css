@@ -1,0 +1,29 @@
+/* import are always first */
+@import url("demo.html");
+/* genral rule that applies to all devices */
+html *{
+    box-sizing: border-box;
+
+}
+*::before,*::after{
+    box-sizing: border-box;
+}
+body{
+    font-size: 18px; /*1em or 1rem*/
+}
+/* mobile rules  */
+#warpper{
+    width: 100%;
+    background-color: yellow;
+}
+/* Larger screen rules  */
+@media screen and (min-width:680px){
+    #warpper{
+        width: 80%;
+        margin: 0 auto;
+        max-width: 1300px;
+        background-color: turquoise;
+        font-size: 4vw;
+
+    }
+}
